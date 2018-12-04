@@ -45,7 +45,7 @@ div{
 	border-color: #ffffff;
 	cursor: all-scroll;
 }
-#button1pt2,#button2pt02,#button3pt2{
+#button1pt2,#button2pt02,#button3pt2,#btn1prison,#btn2prison,#btn3prison{
 	height: 75px;
 	width: 150px;
 	margin-left: 50px;
@@ -77,4 +77,10 @@ div{
 
 #button3pt2:hover{
 	background-image: url("img/buttons/fight-button-hover.png");
+}
+#button2pt002{
+	background-image: url("img/buttons/defeat/defeat 1.0")
+}
+#btn1prison,#btn2prison,#btn3prison{
+
 }
