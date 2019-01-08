@@ -1,5 +1,6 @@
 body{
 	background-color: #000000;
+	font-family: arial black;
 }
 
 div{
@@ -79,8 +80,45 @@ div{
 	background-image: url("img/buttons/fight-button-hover.png");
 }
 #button2pt002{
-	background-image: url("img/buttons/defeat/defeat 1.0")
+	background-image: url("img/buttons/defeat/defeat 1.0");
 }
-#btn1prison,#btn2prison,#btn3prison{
+#btn1prison,#btn2prison,#btn3prison,#btn1prison:hover,#btn2prison:hover,#btn3prison:hover{
+	height: 75px;
+	width: 150px;
+	margin-left: 50px;
+	margin-right: 50px;	background-size: 100%;
+	cursor: pointer;
+	border-color: #000000;
+	transition: 0.75s;
+	border-radius: 00%;
+}
+#btn1prison:hover,#btn2prison:hover,#btn3prison:hover{
+	border-radius: 20%;
+}
 
+#btn1prison{
+	background-image: url("img/buttons/prison/now-button.png");
+}
+
+#btn2prison{
+	background-image: url("img/buttons/prison/wait-button.png");
+}
+
+#btn3prison{
+	background-image: url("img/buttons/prison/guard-button.png");
+}
+
+#btn1prison:hover{
+	background-image: url("img/buttons/prison/now-button-hover.png");
+}
+
+#btn2prison:hover{
+	background-image: url("img/buttons/prison/wait-button-hover.png");
+}
+
+#btn3prison:hover{
+	background-image: url("img/buttons/prison/guard-button-hover.png");
+}
+#btn1hguard,#btn1hguard,#btn1hguard{
+	background-image: url("img/buttons/prison/now-button-hover.png");
 }

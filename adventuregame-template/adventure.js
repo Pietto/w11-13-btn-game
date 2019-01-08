@@ -1,5 +1,5 @@
 var delay1 = 0
-var delay1time = 1500
+var delay1time = 2500
 
 var originaldelay = delay1
 var originaldelaytime = delay1time
@@ -74,8 +74,6 @@ function goprison() {
 	document.getElementById('button2pt02').style.visibility = 'hidden';
 	document.getElementById('button3pt2').style.visibility = 'hidden';
 	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-2/court-choice-prison.png')";}, 0);
-	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-2/court-choice-prison-2.png')";}, delay3+=delay3time);
-
 	setTimeout(function() {prisonlevel();}, delay3+=delay3time);
 }
 function stillgoprison() {
@@ -99,7 +97,7 @@ function goshooting() {
 	document.getElementById('button1pt2').style.visibility = 'hidden';
 	document.getElementById('button2pt02').style.visibility = 'hidden';
 	document.getElementById('button3pt2').style.visibility = 'hidden';
-
+																									
 	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-2/court-choice-fight-1.png')";}, 0);
 	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-2/court-choice-fight-2.png')";}, delay3+=delay3time);
 	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-2/court-choice-fight-3.png')";}, delay3+=delay3time);	
@@ -126,6 +124,42 @@ function prisonlevel() {
 	setTimeout(function() {document.getElementById('btn1prison').style.visibility = 'visible';}, delay4);
 	setTimeout(function() {document.getElementById('btn2prison').style.visibility = 'visible';}, delay4);
 	setTimeout(function() {document.getElementById('btn3prison').style.visibility = 'visible';}, delay4);
+
+	btn1prison.onclick = 
+	btn2prison.onclick = 
+	btn3prison.onclick = hguard
+}
+
+function hguard() {
+	delay5 = originaldelay
+	delay5time = originaldelaytime
+
+	document.getElementById('btn1prison').style.visibility = 'hidden';
+	document.getElementById('btn2prison').style.visibility = 'hidden';
+	document.getElementById('btn3prison').style.visibility = 'hidden'; 
+
+	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-3/hguard/prison-guard-1.png')";}, delay5);
+	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-3/hguard/prison-guard-2.png')";}, delay5+=delay5time);
+	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-3/hguard/prison-guard-3.png')";}, delay5+=delay5time);
+	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-3/hguard/prison-guard-4.png')";}, delay5+=delay5time);
+	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-3/hguard/prison-guard-5.png')";}, delay5+=delay5time);
+	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-3/hguard/prison-guard-6.png')";}, delay5+=delay5time);
+	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-3/hguard/prison-guard-7.png')";}, delay5+=delay5time);
+	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-3/hguard/prison-guard-8.png')";}, delay5+=delay5time);
+	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-3/hguard/prison-guard-9.png')";}, delay5+=delay5time);
+	setTimeout(function() {document.getElementById("game-container").style.background = "url('img/scenes/scene-3/hguard/prison-guard-10.png')";}, delay5+=delay5time);
+
+	document.getElementById('btn1prison').id= 'btn1hguard';
+	document.getElementById('btn2prison').id= 'btn2hguard';
+	document.getElementById('btn3prison').id= 'btn3hguard';
+
+	btn1hguard.onclick = btn1hguard
+	btn2hguard.onclick = btn2hguard
+	btn3hguard.onclick = btn3hguard
+
+	document.getElementById('btn1hguard').style.visibility = 'visible';
+	document.getElementById('btn2hguard').style.visibility = 'visible';
+	document.getElementById('btn3hguard').style.visibility = 'visible';
 }
 
 
